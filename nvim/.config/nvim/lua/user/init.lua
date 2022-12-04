@@ -246,7 +246,13 @@ local config = {
           function() ResetGuiFont()  end,
           desc = "Reset font size"
         },
+        ["<C-\\>"] = {"<cmd>ToggleTerm<cr>", desc="Toggle terminal" },
       },
+      t = {
+        ["<C-\\>"] = {"<cmd>ToggleTerm<cr>", desc="Toggle terminal" },
+        -- ["<esc>"] = {"<C-\\><C-n>", desc = "Terminal normal mode"},
+        -- ["jk"] = {"<C-\\><C-n>", desc = "Terminal normal mode"},
+      }
       -- n = {
       --   -- second key is the lefthand side of the map
       --   -- mappings seen under group name "Buffer"
