@@ -17,13 +17,13 @@ local config = {
     options = {
       opt = {
         relativenumber = true, -- sets vim.opt.relativenumber
-        numberwidth = 5,
+        numberwidth = 6,
         mouse = "",
       },
       g = {
-        gui_font_default_size = 14,
-        gui_font_size = 14,
-        gui_font_face = "DroidSansMono Nerd Font",
+        gui_font_default_size = 15,
+        gui_font_size = 15,
+        gui_font_face = "FiraCode Nerd Font",
       },
     },
 
