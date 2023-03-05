@@ -19,6 +19,7 @@ local config = {
       relativenumber = true, -- sets vim.opt.relativenumber
       numberwidth = 6,
       mouse = "",
+      swapfile = false,
     },
     g = {
       gui_font_default_size = 15,
@@ -36,18 +37,31 @@ local config = {
 
       -- You can also add new plugins here as well:
       -- { "andweeb/presence.nvim" },
-      { "ellisonleao/glow.nvim" },
-      -- {
-      --   "ahmedkhalf/project.nvim",
-      --   config = function()
-      --     require("project_nvim").setup {
-      --       require('telescope').load_extension('projects')
-      --       -- your configuration comes here
-      --       -- or leave it empty to use the default settings
-      --       -- refer to the configuration section below
-      --     }
-      --   end
-      -- },
+      {"ellisonleao/glow.nvim", config = function() require("glow").setup() end},
+      { "nvim-telescope/telescope-project.nvim"},
+      {
+        "nvim-telescope/telescope-file-browser.nvim",
+        requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+        config = function() 
+          require("telescope").setup {
+          }
+          -- To get telescope-file-browser loaded and working with telescope,
+          -- you need to call load_extension, somewhere after setup function:
+          require("telescope").load_extension "file_browser"
+
+        end
+      },
+      {
+        "ahmedkhalf/project.nvim",
+        config = function()
+          require("project_nvim").setup {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+          }
+          require('telescope').load_extension('projects')
+        end,
+      },
+      { "folke/tokyonight.nvim"},
       {
         "folke/trouble.nvim",
         config = function()
@@ -180,6 +194,9 @@ local config = {
           -- third key is the key to bring up next level and its displayed
           -- group name in which-key top level menu
           T = {"<cmd>TroubleToggle<cr>", "Trouble"},
+          ["f"] = {
+            p = {"<cmd>Telescope projects<cr>", "Search Projects"},
+          }
         },
       },
     }, },
