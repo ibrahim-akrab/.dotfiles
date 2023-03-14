@@ -17,7 +17,7 @@ local config = {
       L = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" },
       H = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc = "Previous buffer" },
       ["<C-\\>"] = {"<cmd>ToggleTerm<cr>", desc="Toggle terminal" },
-      ["<leader>uT"] = {"<cmd>TroubleToggle<cr>", desc="Toggle trouble"},
+      ["<leader>lt"] = {"<cmd>TroubleToggle<cr>", desc="Toggle trouble"},
       ["<leader>fp"] = {"<cmd>Telescope projects<cr>", desc="Find projects"},
     },
     t = {
