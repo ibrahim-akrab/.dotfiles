@@ -9,6 +9,11 @@ local config = {
     },
   },
 
+  lsp = {
+      -- will be set up by rust-tools plugin
+      skip_setup = { "rust_analyzer" },
+    },
+
 
   mappings = {
     i = {
