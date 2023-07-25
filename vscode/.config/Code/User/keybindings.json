@@ -3,12 +3,12 @@
     {
         "key": "space e",
         "command": "workbench.action.toggleSidebarVisibility",
-        "when": "sideBarFocus"
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.explorer'"
     },
     {
         "key": "space o",
         "command": "workbench.view.explorer",
-        "when": "sideBarFocus"
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.explorer'"
     },
     {
         "key": "ctrl+shift+e",
