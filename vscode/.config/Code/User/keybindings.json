@@ -36,12 +36,12 @@
         "when": "panelFocus && activePanel == 'workbench.panel.markers'"
     },
     {
-        "key": "space t",
+        "key": "ctrl+e",
         "command": "workbench.actions.view.toggleProblems",
         "when": "panelFocus"
     },
     {
-        "key": "space shift+t",
+        "key": "ctrl+t",
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "panelFocus && terminal.active"
     },
@@ -49,5 +49,10 @@
         "key": "ctrl+`",
         "command": "-workbench.action.terminal.toggleTerminal",
         "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
     },
 ]
