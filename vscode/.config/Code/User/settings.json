@@ -35,6 +35,10 @@
             "commands": [":tabclose"]
         },
         {
+            "before": ["<Leader>", "C"],
+            "commands": [ "workbench.action.closeOtherEditors"]
+        },
+        {
             "before": ["<Leader>", "p"],
             "commands": [ "workbench.action.showCommands", ]
         },
@@ -84,4 +88,13 @@
     "editor.fontSize": 15,
     "window.zoomLevel": 0.4,
     "editor.minimap.enabled": false,
+    "editor.guides.bracketPairs": true,
+    "[nix]": {
+        "editor.defaultFormatter": "brettm12345.nixfmt-vscode"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.inputValidation": "off",
+    "git.confirmSync": false,
+    "git.allowNoVerifyCommit": true,
+    "git.confirmNoVerifyCommit": false,
 }
