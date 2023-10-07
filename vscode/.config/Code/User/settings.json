@@ -1,88 +1,8 @@
 {
     "workbench.colorTheme": "Default Dark Modern",
-    "vim.leader": "<Space>",
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["<C-h>"],
-            "after": ["<C-w>", "h"]
-        },
-        {
-            "before": ["<C-j>"],
-            "after": ["<C-w>", "j"]
-        },
-        {
-            "before": ["<C-k>"],
-            "after": ["<C-w>", "k"]
-        },
-        {
-            "before": ["<C-l>"],
-            "after": ["<C-w>", "l"]
-        },
-        {
-            "before": ["H"],
-            "commands": [":tabprev"]
-        },
-        {
-            "before": ["L"],
-            "commands": [":tabnext"]
-        },
-        {
-            "before": ["<Leader>", "n"],
-            "commands": [":tabnew"]
-        },
-        {
-            "before": ["<Leader>", "c"],
-            "commands": [":tabclose"]
-        },
-        {
-            "before": ["<Leader>", "C"],
-            "commands": [ "workbench.action.closeOtherEditors"]
-        },
-        {
-            "before": ["<Leader>", "p"],
-            "commands": [ "workbench.action.showCommands", ]
-        },
-        {
-            "before": ["<Leader>", "s"],
-            "commands": [ "workbench.action.gotoSymbol", ]
-        },
-        {
-            "before": ["<C-e>"],
-            "commands": [ "workbench.actions.view.toggleProblems", ]
-        },
-        {
-            "before": ["<C-t>"],
-            "commands": [ "workbench.action.terminal.toggleTerminal", ]
-        },
-        {
-            "before": ["<Leader>", "f"],
-            "commands": [ "workbench.action.quickOpen", ]
-        },
-        {
-            "before": ["<Leader>", "/"],
-            "commands": [ "editor.action.commentLine", ]
-        },
-        {
-            "before": ["<Leader>", "o"],
-            "commands": [ "workbench.view.explorer"]
-        },
-        {
-            "before": ["<Leader>", "e"],
-            "commands": [ "workbench.view.explorer"]
-        }
-
-    ],
     "editor.lineNumbers": "relative",
-    "vim.easymotion": true,
     "debug.console.fontSize": 15,
     "terminal.integrated.fontSize": 15,
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": ["<Leader>", "/"],
-            "commands": [ "editor.action.commentLine", ]
-        },
-
-    ],
     "terminal.integrated.defaultProfile.linux": "tmux",
     "git.openRepositoryInParentFolders": "never",
     "editor.fontSize": 15,
@@ -97,4 +17,7 @@
     "git.confirmSync": false,
     "git.allowNoVerifyCommit": true,
     "git.confirmNoVerifyCommit": false,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
 }

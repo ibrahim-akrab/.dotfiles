@@ -72,5 +72,17 @@
         "key": "f2",
         "command": "-renameFile",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    }
+    },
+    {
+        "command": "vscode-neovim.send",
+        "key": "ctrl+e",
+        "when": "editorTextFocus && neovim.mode != insert",
+        "args": "<C-e>"
+    },
+    {
+        "command": "vscode-neovim.send",
+        "key": "ctrl+t",
+        "when": "editorTextFocus && neovim.mode != insert",
+        "args": "<C-t>"
+    },
 ]
