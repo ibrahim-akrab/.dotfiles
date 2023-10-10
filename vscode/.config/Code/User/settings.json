@@ -20,4 +20,5 @@
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
+    "editor.cursorSurroundingLines": 10,
 }

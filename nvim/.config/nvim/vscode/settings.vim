@@ -22,13 +22,12 @@ endfunction
 
 let mapleader = " "
 " Better Navigation
-hnoremap <silent> <C-j> :call VSCodeNotify('workbench.action.navigateDown')<CR>
-hnoremap <silent> <C-k> :call VSCodeNotify('workbench.action.navigateUp')<CR>
-hnoremap <silent> <C-h> :call VSCodeNotify('workbench.action.navigateLeft')<CR>
-hnoremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
-hnoremap L :call <SID>switchEditor(v:count, 'next')<CR>
+noremap <silent> <C-j> :call VSCodeNotify('workbench.action.navigateDown')<CR>
+noremap <silent> <C-k> :call VSCodeNotify('workbench.action.navigateUp')<CR>
+noremap <silent> <C-h> :call VSCodeNotify('workbench.action.navigateLeft')<CR>
+noremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
+noremap L :call <SID>switchEditor(v:count, 'next')<CR>
 noremap H :call <SID>switchEditor(v:count, 'prev')<CR>
-noremap <leader>n :call VSCodeNotify('workbench.action.files.newUntitledFile')<CR>
 
 " Actions
 noremap <leader>C :call VSCodeNotify('workbench.action.closeOtherEditors')<CR>
@@ -36,12 +35,14 @@ noremap <leader>c :call VSCodeNotify('workbench.action.closeActiveEditor')<CR>
 noremap <leader>p :call VSCodeNotify('workbench.action.showCommands')<CR>
 noremap <leader>s :call VSCodeNotify('workbench.action.gotoSymbol')<CR>
 noremap <leader>f :call VSCodeNotify( 'workbench.action.quickOpen')<CR>
-nnoremap <leader>/ :call VSCodeNotify( 'editor.action.commentLine')<CR>
-xnoremap <expr> <leader>/ <SID>vscodeCommentary()
 noremap <leader>o :call VSCodeNotify('workbench.view.explorer')<CR>
 noremap <leader>e :call VSCodeNotify('workbench.view.explorer')<CR>
+noremap <leader>n :call VSCodeNotify('workbench.action.files.newUntitledFile')<CR>
+nnoremap <leader>/ :call VSCodeNotify( 'editor.action.commentLine')<CR>
+xnoremap <expr> <leader>/ <SID>vscodeCommentary()
 noremap <C-e> :call VSCodeNotify('workbench.actions.view.toggleProblems')<CR>
 noremap <C-t> :call VSCodeNotify('workbench.action.terminal.toggleTerminal')<CR>
+noremap <Esc> :nohl<CR>
 
 
 set ignorecase

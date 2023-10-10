@@ -85,4 +85,15 @@
         "when": "editorTextFocus && neovim.mode != insert",
         "args": "<C-t>"
     },
+    {
+        "command": "vscode-neovim.send",
+        "key": "ctrl+u",
+        "when": "editorTextFocus && neovim.mode != insert",
+        "args": "<C-u>"
+    },    {
+        "command": "vscode-neovim.send",
+        "key": "ctrl+d",
+        "when": "editorTextFocus && neovim.mode != insert",
+        "args": "<C-d>"
+    },
 ]
