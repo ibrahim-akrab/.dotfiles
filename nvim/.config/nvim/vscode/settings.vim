@@ -47,3 +47,4 @@ noremap <Esc> :nohl<CR>
 
 set ignorecase
 set smartcase
+set incsearch hl
