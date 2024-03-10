@@ -6,13 +6,11 @@
     "terminal.integrated.defaultProfile.linux": "tmux",
     "git.openRepositoryInParentFolders": "never",
     "editor.fontSize": 15,
-    "window.zoomLevel": 0.4,
     "editor.minimap.enabled": false,
     "editor.guides.bracketPairs": true,
     "[nix]": {
         "editor.defaultFormatter": "brettm12345.nixfmt-vscode"
     },
-    "diffEditor.ignoreTrimWhitespace": false,
     "git.inputValidation": "off",
     "git.confirmSync": false,
     "git.allowNoVerifyCommit": true,
@@ -21,4 +19,17 @@
         "asvetliakov.vscode-neovim": 1
     },
     "editor.cursorSurroundingLines": 10,
+    "rust-analyzer.server.path": "rust-analyzer",
+    "telemetry.telemetryLevel": "off",
+    "gitlens.telemetry.enabled": false,
+    "editor.rulers": [
+        {
+            "column": 120,
+            "color": "#a86969"
+        }
+    ],
+    "workbench.editor.enablePreview": false,
+    "evenBetterToml.formatter.trailingNewline": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
 }

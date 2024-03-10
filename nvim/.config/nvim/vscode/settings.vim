@@ -19,6 +19,11 @@ function! s:switchEditor(...) abort
     endfor
 endfunction
 
+function! s:maxmizeEditor() abort
+    call VSCodeNotify('workbench.action.maximizeEditor')
+    call VSCodeNotify('workbench.action.closePanel')
+endfunction
+
 
 let mapleader = " "
 " Better Navigation
@@ -38,13 +43,20 @@ noremap <leader>f :call VSCodeNotify( 'workbench.action.quickOpen')<CR>
 noremap <leader>o :call VSCodeNotify('workbench.view.explorer')<CR>
 noremap <leader>e :call VSCodeNotify('workbench.view.explorer')<CR>
 noremap <leader>n :call VSCodeNotify('workbench.action.files.newUntitledFile')<CR>
+noremap gd :call VSCodeNotify('editor.action.revealDefinitionAside')<CR>
+noremap gi :call VSCodeNotify('editor.action.goToImplementation')<CR>
+noremap gr :call VSCodeNotify('editor.action.goToReferences')<CR>
 nnoremap <leader>/ :call VSCodeNotify( 'editor.action.commentLine')<CR>
 xnoremap <expr> <leader>/ <SID>vscodeCommentary()
 noremap <C-e> :call VSCodeNotify('workbench.actions.view.toggleProblems')<CR>
 noremap <C-t> :call VSCodeNotify('workbench.action.terminal.toggleTerminal')<CR>
+noremap <C-z> :call <SID>maxmizeEditor()<CR>
+noremap <C-j> :call VSCodeNotify('workbench.action.focusPanel')<CR>
+noremap gf :call VSCodeNotify('seito-openfile.openFileFromText')<CR>
 noremap <Esc> :nohl<CR>
 
 
 set ignorecase
 set smartcase
 set incsearch hl
+
