@@ -11,7 +11,7 @@
     "[nix]": {
         "editor.defaultFormatter": "brettm12345.nixfmt-vscode"
     },
-    "git.inputValidation": "off",
+    "git.inputValidation": true,
     "git.confirmSync": false,
     "git.allowNoVerifyCommit": true,
     "git.confirmNoVerifyCommit": false,
